@@ -1,0 +1,7 @@
+{
+  "name": "Wolf121",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

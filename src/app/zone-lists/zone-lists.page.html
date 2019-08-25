@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    
+   <ion-buttons slot="start">
+    <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>{{address}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list *ngFor="let zone of zoneLists; index as j">
+    <ion-item><b>{{j+1}}--</b>{{zone}}</ion-item>
+    
+  </ion-list>
+
+
+</ion-content>

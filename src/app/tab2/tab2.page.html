@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Projects
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-list *ngFor="let project of projects | async ;index as i">
+    <ion-item>
+      <ion-label>
+        <h2>{{project.address.city}}</h2>
+       <h1 [routerLink]="['/zone-lists',i]"><b>{{project.address.address}}</b></h1>
+    
+    </ion-label>
+    </ion-item>
+    
+  </ion-list>
+
+
+  
+
+
+</ion-content>
