@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Light</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list *ngFor="let light of lights | async ;index as i">
+        <ion-item>
+
+           <ion-label>
+            <h1><b>{{light.name}}</b></h1>
+           </ion-label>
+
+            <ion-toggle checked="{{switch[i]}}" (click)="toggle(i)" ></ion-toggle>
+     
+        </ion-item>
+        
+      </ion-list>
+
+
+</ion-content>

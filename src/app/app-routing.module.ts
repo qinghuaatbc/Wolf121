@@ -8,6 +8,7 @@ const routes: Routes = [
   },
   { path: 'zone-lists/:id', loadChildren: './zone-lists/zone-lists.module#ZoneListsPageModule' },
   { path: 'playing-movie/:mid', loadChildren: './playing-movie/playing-movie.module#PlayingMoviePageModule' }
+  //{ path: 'light', loadChildren: './light/light.module#LightPageModule' }
 ];
 @NgModule({
   imports: [

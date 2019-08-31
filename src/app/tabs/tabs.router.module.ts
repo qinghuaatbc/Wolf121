@@ -37,6 +37,17 @@ const routes: Routes = [
           }
         ]
       },
+
+      {
+        path: 'light',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../light/light.module').then(m => m.LightPageModule)
+          }
+        ]
+      },
       {
         path: '',
         redirectTo: '/tabs/tab1',
